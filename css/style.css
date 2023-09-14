@@ -87,6 +87,7 @@ body {
     position: absolute;
     top: 5px;
     right: 10px;
+    z-index: 1;
 }
 
 .small-icon {
@@ -96,6 +97,10 @@ body {
     border-radius: 5px;
     padding: 5px;
     margin-left: 5px;
+}
+.small-icon:hover {
+    background-color: #5e5d5d;
+    cursor: pointer;
 }
 
 /* navbar  */
@@ -117,11 +122,20 @@ nav {
 }
 
 .big-icon{
-    font-size: 2em;
+    font-size: 1.5em;
+}
+
+.nav-left div:hover, .nav-center div:hover { 
+    color: #b6b6b6;
+    cursor: pointer;
 }
 
 #green-icon {
     color: var(--color-share-screen);
+}
+
+#green-icon:hover {
+    color: #b6b6b6;
 }
 
 #end-button {
@@ -130,5 +144,11 @@ nav {
     line-height: 70px;
     padding: 0 15px;
     font-weight: bold;
+}
+
+#end-button:hover {
+    background-color: #5e5d5d;
+    color: #f07c6f;
+    cursor: pointer;
 }
 
