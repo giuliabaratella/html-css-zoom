@@ -16,7 +16,6 @@
 }
 
 body {
-    width: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: var(--color-background);
     color: var(--color-text);
@@ -60,8 +59,9 @@ body {
 /* main  */
 .container {
     margin: 0 auto;
-    width: 95vw;
+    width: 95%;
     height:calc(100vh - 70px);
+    overflow-y: auto;
 }
 
 .card {
@@ -70,6 +70,7 @@ body {
     position: relative;
     margin-bottom: 15px;
 }
+
 .card img {
     width: 100%;
     display: block;
