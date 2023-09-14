@@ -4,14 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <main>
         main
     </main>
-    <nav>
-        nav
+
+    <!-- nav  -->
+    <nav class="d-flex just-sp-between align-center">
+
+        <!-- parte sinistra  -->
+        <div class="nav-left d-flex flex-start">
+            <div>
+                <div class="big-icon"><i class="fa-solid fa-microphone"></i></div>
+                <div>Mute</div>
+            </div>
+            <div class="chevron-up">
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div>
+                <div class="big-icon"><i class="fa-solid fa-video"></i></div>
+                <div>StopVideo</div>
+            </div>
+            <div class="chevron-up">
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
+        </div>
+
+        <!-- parte centrale  -->
+        <div class="nav-center d-flex just-center">
+            <div>
+                <div class="big-icon">
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+                <div>Invite</div>
+            </div>
+            <div>
+                <div class="big-icon">
+                    <i class="fa-solid fa-user-group"></i>
+                </div>
+                <div>Manage Partecipants</div>
+            </div>
+            <div>
+                <div class="big-icon">
+                    <i class="fa-solid fa-chart-column"></i>
+                </div>
+                <div>Polling</div>
+            </div>
+            <div>
+                <div id="green-icon" class="big-icon">
+                    <i  class="fa-solid fa-share-from-square"></i>
+                </div>
+                <div>ShareScreen</div>
+            </div>
+            <div class="chevron-up">
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
+            <div>
+                <div class="big-icon">
+                    <i class="fa-solid fa-comment"></i>
+                </div>
+                <div>Chat</div>
+            </div>
+            <div>
+                <div class="big-icon">
+                    <i class="fa-solid fa-record-vinyl"></i>
+                </div>
+                <div>Record</div>
+            </div>
+            <div>
+                <div class="big-icon">
+                    <i class="fa-solid fa-table-cells-large"></i>
+                </div>
+                <div>Breakout Rooms</div>
+            </div>
+            <div>
+                <div class="big-icon">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <div>More</div>
+        </div>
+
+        <!-- parte destra  -->
+        <div class="nav-right">
+            <div role="button" id="end-button">
+                End meeting
+            </div>
+        </div>
+
     </nav>
     
 </body>
