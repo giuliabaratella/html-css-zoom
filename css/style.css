@@ -1,0 +1,30 @@
+/* main utilities */
+
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+	--color-background: #000000;
+	--color-navbar: #222222;
+	--color-text: #ffffff;
+	--color-end-button: #4a4a4a;
+	--color-share-screen: #4bc800;
+	--color-text-highlight: #e1220e;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+nav {
+    background-color: var(--color-navbar);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
