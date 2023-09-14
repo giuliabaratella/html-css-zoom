@@ -78,7 +78,24 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
+    padding: 3px 5px;
     background-color: rgba(0,0,0,0.3);
+}
+
+/* top-right-icons  */
+.top-right-icon-container {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.small-icon {
+    font-size: 0.9em;
+    font-weight: bold;
+    background-color: var(--color-end-button);
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 5px;
 }
 
 /* navbar  */
