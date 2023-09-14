@@ -16,8 +16,7 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: var(--color-background);
     color: var(--color-text);
@@ -28,18 +27,58 @@ body {
 .d-flex {
     display: flex;
 }
+.wrap {
+    flex-wrap: wrap;
+}
 .just-sp-between {
     justify-content: space-between;
+}
+.just-start {
+    justify-content: flex-start;
+}
+.just-center {
+    justify-content: center;
+}
+.align-start {
+    align-items: flex-start;
+    align-content: flex-start;
 }
 .align-center {
     align-items: center;
     align-content: center;
 }
-.flex-start {
-    justify-content: flex-start;
+.align-sp-evenly {
+    align-items: space-evenly;
+    align-content: space-evenly;
 }
-.just-center {
-    justify-content: center;
+.align-sp-between {
+    align-items: space-between;
+    align-content: space-between;
+}
+
+
+/* main  */
+.container {
+    margin: 0 auto;
+    width: 95vw;
+    height:calc(100vh - 70px);
+}
+
+.card {
+    width:calc(100% / 7 - 10px);
+    height: fit-content;
+    position: relative;
+    margin-bottom: 15px;
+}
+.card img {
+    width: 100%;
+    display: block;
+}
+.name-tag {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
 }
 
 /* navbar  */
@@ -49,8 +88,9 @@ nav {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 8vh;
+    height: 70px;
     text-align: center;
+    flex-wrap: nowrap;
 }
 .nav-left div, .nav-center div {
     padding: 0 5px;
@@ -70,7 +110,7 @@ nav {
 #end-button {
     background-color: var(--color-end-button);
     color: var(--color-text-highlight);
-    line-height: 8vh;
+    line-height: 70px;
     padding: 0 15px;
     font-weight: bold;
 }
